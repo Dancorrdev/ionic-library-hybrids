@@ -28,7 +28,11 @@ const routes: Routes = [
   {
     path: 'nosotros',
     loadChildren: () => import('./nosotros/nosotros.module').then( m => m.NosotrosPageModule)
+  },  {
+    path: 'edicion-datos',
+    loadChildren: () => import('./edicion-datos/edicion-datos.module').then( m => m.EdicionDatosPageModule)
   },
+
 ];
 
 @NgModule({
