@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { UserEditComponent } from './user-edit/user-edit.component';
-import { UserDeleteComponent } from './user-delete/user-delete.component';
 
 const routes: Routes = [
   {
@@ -12,15 +10,7 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },
-  {
-    path: 'user-edit',
-    component: UserEditComponent, // Ruta para editar la cuenta de usuario
-  },
-  {
-    path: 'user-delete',
-    component: UserDeleteComponent, // Ruta para eliminar la cuenta de usuario
-  },
+  }
 ];
 
 @NgModule({
